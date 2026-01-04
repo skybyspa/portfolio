@@ -7,4 +7,7 @@ This portfolio was built with HTML + CSS + Bootstrap. It is being hosted on GitH
 V1.1. The website is currently being updated. 
 
 #### What's New
-Navigation bar was modified to align with the main Wordpress website.
+A new project was added.
+
+#### What's Next
+Accessibility improvements, including alt text for images.
