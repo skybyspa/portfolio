@@ -1,0 +1,42 @@
+// Material Design 3 Colors
+$primary-surface: #EADDFF;
+$surface: #FEF7FF;
+$outline-variant: #CAC4D0;
+$primary: #6750A4;
+$surface-container-low: #F7F2FA;
+$tertiary: #7D5260;
+
+.body { 
+    background-color: $surface-container-low;
+}
+
+.nav-border-custom {
+    border-bottom: 1px solid $outline-variant;
+}
+
+.btn {
+    border-color: $tertiary;
+    color: $tertiary;
+}
+
+.btn:hover {
+    border-color: $tertiary;
+    color: white;
+    background-color: $tertiary;
+}
+
+.card {
+    border-color: $outline-variant;
+}
+
+.card-link {
+    color: $primary;
+}
+
+.card-body {
+    background-color: $surface;
+}
+
+.back-link {
+    color: black;
+}

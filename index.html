@@ -4,29 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Spa Mahapiyasilp</title>
+    <title>Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <!-- Use Google Font API to add Roboto Serif to match with the main WordPress website. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300;400;600;700;800&family=Poppins:wght@600&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Use downloaded compiled and minified CSS bundle. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Use bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
-<body>
-    <div class="bg-info py-2">
+<body class="body">
+
+    <nav class="navbar navbar-expand-lg navbar-light mb-5 nav-border-custom py-3">
         <div class="container custom-container">
-            <div class="row">
-                <div class="col">
-                    <div class="alert alert-info mb-0" role="alert">
-                    ℹ️ This website is currently being updated.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <nav class="navbar mt-3 navbar-expand-lg navbar-light bg-light mb-5">
-        <div class="container custom-container">
-            <a class="navbar-brand py-2" href="#">
+            <!-- Site logo -->
+            <a class="navbar-brand py-2" href="https://skybyspa.com">
                 <img id="logo" src="images/logo.svg" alt="">
             </a>
 
@@ -34,6 +29,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Nav pills -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
@@ -47,191 +43,172 @@
                     </li>
                 </ul>
 
+                <!-- CTA button -->
                 <div>
-                    <a href="https://skybyspa.com/contact/" class="btn btn-outline-primary">SAY HELLO SKY</a>
+                    <a href="https://skybyspa.com/contact/" class="btn">SAY HELLO SKY</a>
                 </div>
             </div>
         </div>   
     </nav>
 
-    <div class="container custom-container">
+    <main class="pb-5 mb-5">
+        <div class="container custom-container">
 
-        <div class="row">
-            <div class="col mb-2">
-                <h1 class="display-4 text-center"><b>Sawasdee, I'm Spa</b></h1>
+            <!-- Hero introduction -->
+            <div class="row">
+                <div class="col mb-3">
+                    <h1 class="fw-normal"><b>Sawasdee, I'm Spa</b></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-5">
+                    <p class="fw-light">A self-motivated UX engineer, blending <strong class="fw-semibold">design thinking</strong> with <strong class="fw-semibold">development</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="col-12 mb-4 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/portfolio.png" class="project-img" alt="Wireframe of this portfolio."/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio</h5>
+                            <p class="card-text fw-light">See how this portfolio was made.</p>
+                            <a href="case-studies/portfolio.html" class="card-link fw-light d-block text-end" target="">View case study</a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/nightlight-alt3.png" class="project-img" alt="High fidelity prototype of a 52/17 pomodoro timer app"/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Pomodoro Timer</h5>
+                            <p class="card-text fw-light">Work 52 min and rest 17 min.</p>
+                            <a href="case-studies/pomodoro-timer.html" class="card-link fw-light d-block text-end" target="">View prototype</a> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="col-12 mb-4 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/phd-milestone-alt.png" class="project-img" alt="Wireframe a PhD milestones management system for students, supervisors, and admins."/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Milestones Planner</h5>
+                            <p class="card-text fw-light">Manage your PhD milestones.</p>
+                            <a href="case-studies/milestones-planner.html" class="card-link fw-light d-block text-end" target="">View case study</a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/imi.png" class="project-img" alt="High fidelity prototype of a to-do list app with the the days of the month equally split between two columns"/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">To-Do List</h5>
+                            <p class="card-text fw-light">Organise your life through digital bullet journaling.</p>
+                            <a href="case-studies/to-do-list.html" class="card-link fw-light d-block text-end" target="">View prototype</a> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="col-12 mb-4 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/loopcare.png" class="project-img" alt="Graphic for a pitch of a tamagotchi-inspired student wellness app."/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Student Wellness</h5>
+                            <p class="card-text fw-light">Build habits by raising a Tamagotchi.</p>
+                            <a href="case-studies/student-wellness.html" class="card-link fw-light d-block text-end" target="">View case study</a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/music-poster.png" class="project-img" alt="Poster of instrumental artist Xeuphoria's upcoming concert."/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Music Poster</h5>
+                            <p class="card-text fw-light">Discover Xeuphoria's upcoming concert.</p>
+                            <a href="case-studies/music-poster.html" class="card-link fw-light d-block text-end" target="">View poster</a> 
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Row 4 -->
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/activitia.png" class="project-img" alt="High fidelity mobile prototype of the home screen of the activity planner app."/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Activity Planner</h5>
+                            <p class="card-text fw-light">Find meaningful activities to do.</p>
+                            <a href="case-studies/activity-planner.html" class="card-link fw-light d-block text-end" target="">View case study</a> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="card rounded-0 border-1">
+                        <div class="img-wrapper">
+                            <img src="images/the-air-alt.png" class="project-img" alt="Low fidelity hand-drawn wireframe of my family business WordPress website."/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Housing Project</h5>
+                            <p class="card-text fw-light">See how my family business website is being built.</p>
+                            <a href="case-studies/housing-project.html" class="card-link fw-light d-block text-end" target="">View case study</a> 
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="row">
-            <div class="col mb-5">
-                <p class="text-center">A self-taught UX/UI designer, blending <strong>design thinking</strong> with <strong>programming</strong>. Welcome to my portfolio.</h1>
-            </div>
-        </div>
+    </main>
 
-        <div class="row">
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Featured
-                    </div>
-                    <img src="images/portfolio.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Portfolio</h5>
-                        <p class="card-text">See how this portfolio was made.</p>
-                        <a href="https://drive.google.com/file/d/1-R0sI3fFzG-8sr1AQSdryZ8borljw1CB/view?usp=sharing" class="card-link" target="_blank">Competitive audit</a>
-                        <a href="https://drive.google.com/file/d/1jaq0gzEg8oKcvJOAaMsvc3W-4gBpQMLX/view?usp=sharing" class="card-link" target="_blank">Lo-fi</a>
-                        <a href="https://github.com/skybyspa/portfolio" class="card-link" target="_blank">Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Personal
-                    </div>
-                    <img src="images/nightlight-alt3.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Nightlight: 52/17 Timer</h5>
-                        <p class="card-text">Work 52 minutes and rest 17 minutes with this pomodoro timer.</p>
-                        <a href="https://www.figma.com/proto/JzUOpNdJiwZ9tjZHOruB0D/Nightlight--Minimal-52-17-Pomodoro?node-id=142-3187&p=f&t=KRsNFLrUHKilhc7y-1&scaling=scale-down&content-scaling=fixed&page-id=124%3A1195&starting-point-node-id=142%3A3187&show-proto-sidebar=1" class="card-link" target="_blank">Hi-fi</a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="row">
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        University
-                    </div>
-                    <img src="images/phd-milestone-alt.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">PHD Milestones Planner</h5>
-                        <p class="card-text">State University's milestones system for students and staffs.</p>
-                        <a href="https://drive.google.com/file/d/1XCvgTC3WalcsbAUOZKyzK4UxYbUoM6Kv/view?usp=sharing" class="card-link" target="_blank">Persona</a>
-                        <a href="https://miro.com/app/board/uXjVJRM1Edg=/?share_link_id=19774584782" class="card-link" target="_blank">Story map</a>
-                        <a href="https://drive.google.com/file/d/1lmTTgeYbKZ5LKCc-9doPgc9xb-_BmM4i/view?usp=sharing" class="card-link" target="_blank">Lo-fi</a>
-                        <a href="https://www.figma.com/proto/eAmOPZzlI1qCG7NSKZN1kP/FIT2001-SGRT-SYSTEM?node-id=207-3665&p=f&t=TjXrb0n8dDzzePPc-1&scaling=scale-down&content-scaling=fixed&page-id=174%3A3577&starting-point-node-id=207%3A3665&show-proto-sidebar=1" class="card-link" target="_blank">Mid-fi</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Personal
-                    </div>
-                    <img src="images/imi.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Imi: To-do list</h5>
-                        <p class="card-text">Life organisation, inspired by bullet journaling.</p>
-                        <a href="https://www.figma.com/proto/WnFlUsuNEVDoWyIQT3mNtV/Imi--I--Me---Minimal-To-Do-List?node-id=165-301&p=f&t=Beu8yI9jJxLBvA7b-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=165%3A301&show-proto-sidebar=1" class="card-link" target="_blank">Hi-fi</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        University
-                    </div>
-                    <img src="images/loopcare.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">LoopCare: Student Wellness</h5>
-                        <p class="card-text">Tamagotchi-gamified app, helping students build healthy habits.</p>
-                        <a href="https://drive.google.com/file/d/1twonywJ3jJ2ajEFciBOA1leFkiJMlXWU/view?usp=sharing" class="card-link" target="_blank">Pitch</a>
-                        <a href="https://drive.google.com/file/d/1cuPq7FKkvwPfIEpdsiy5CszcTQCrPKSN/view?usp=sharing" class="card-link" target="_blank">Persona</a>
-                        <a href="https://drive.google.com/file/d/1QJcy3PiG_PT4VKcP9CLLPxcXk9dBsCb3/view?usp=sharing" class="card-link" target="_blank">Backlog</a>
-                        <a href="https://drive.google.com/file/d/1btdtggGVdJg9kY3mYzruC2mFbWFHkiKf/view?usp=sharing" class="card-link" target="_blank">Lo-fi</a>
-                        <a href="https://www.figma.com/proto/FsxxCGPreZQLFB2TDpgawO/LoopCare?node-id=282-887&p=f&t=296wf5Nlg5NQwLiG-1&scaling=scale-down&content-scaling=fixed&page-id=24%3A92&starting-point-node-id=282%3A887&show-proto-sidebar=1" class="card-link" target="_blank">Hi-fi</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Personal
-                    </div>
-                    <img src="images/music-poster.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Music Poster</h5>
-                        <p class="card-text">Applying design principles like color theory and visual balance.</p>
-                        <a href="https://drive.google.com/file/d/1dDYZ2EYeyQTcja8Bp7FmQvsDia5nchhg/view?usp=sharing" class="card-link" target="_blank">Poster</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Internship
-                    </div>
-                    <img src="images/sairoong.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Sairoong: Mobile Portal</h5>
-                        <p class="card-text">The rainbow linking employees to every internal app.</p>
-                        <a href="https://drive.google.com/file/d/1G_J1uxvgYW2Eht5EX__S2AFrEhjdjBUr/view?usp=sharing" class="card-link" target="_blank">Pitch</a>     
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Personal
-                    </div>
-                    <img src="images/the-air-alt.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">The Air: Property <small class="text-muted">(Ongoing)</small></h5>
-                        <!-- <h5 class="card-title">The Air: Property <span class="badge bg-secondary ms-2 fs-6">(In Progress)</span></h5> -->
-                        <p class="card-text">WordPress website for my family's housing business.</p>
-                        <a href="https://drive.google.com/file/d/1de8W4UKszFzv6DMrcsYQBzcb_JTGYxIp/view?usp=sharing" class="card-link" target="_blank">Case Study</a>            
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 mb-4 col-lg-6">
-                <div class="card text-bg-light">
-                    <div class="card-header">
-                        Personal
-                    </div>
-                    <img src="images/factorflowers-persona.png" class="card-img-top project-img" alt="#"/>
-                    <div class="card-body">
-                        <h5 class="card-title">FactorFlowers: Boquet Preview <small class="text-muted">(Ongoing)</small></h5>
-                        <!-- <h5 class="card-title">The Air: Property <span class="badge bg-secondary ms-2 fs-6">(In Progress)</span></h5> -->
-                        <p class="card-text">A floral project for the Google UXD certificate.</p>
-                        <a href="files/FactorFlowers - A Google UXD Project.pptx" class="card-link" target="_blank">Case Study</a>            
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-4 col-lg-6">
-            </div>
-        </div>
-    </div>
-
-    <footer class="py-3 my-4 border-top">
+    <footer class="py-3 mb-3 border-top">
         <div class="container custom-container d-flex flex-wrap justify-content-between align-items-center">
-            <div class="d-flex col-md-4">
+            <!-- Copyright message -->
+            <div class="d-flex">
                 © 2026 Designed by Spa. All rights reserved. 
             </div>
 
-            <ul class="nav d-flex col-md-4 justify-content-end">
+            <!--- Contact links -->
+            <ul class="nav d-flex">
                 <li class="ms-3">
-                    <a href="https://www.linkedin.com/in/spa-mahapiyasilp/" target="_blank">
+                    <a href="https://www.linkedin.com/in/spa-mahapiyasilp/" target="">
                         <i class="bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a href="https://line.me/R/ti/p/might2915" target="_blank">
+                    <a href="https://line.me/R/ti/p/might2915" target="">
                         <i class="bi bi-line"></i>
                     </a>
                 </li>
                 <li class="ms-3">
-                    <a href="mailto:spa.mahapiyasilp@gmail.com?subject=Let's%20Work%20Together&body=Hi%20Spa," target="_blank">
+                    <a href="mailto:spa.mahapiyasilp@gmail.com?subject=Let's%20Work%20Together&body=Hi%20Spa," target="">
                         <i class="bi bi-envelope"></i>
                     </a>
                 </li>
@@ -239,7 +216,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 

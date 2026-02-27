@@ -1,0 +1,67 @@
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 75%
+  }
+}
+
+body {
+  font-family: 'Roboto Serif', serif;
+}
+
+#logo {
+  width: 120px;
+  height: auto;
+}
+
+.card {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+.img-wrapper {
+  height: 400px;        /* controls image area height */
+  display: flex;
+  align-items: center;  /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+.project-img {
+  max-width: 420px;
+  max-height: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .nav a {
+    color: black;
+}
+
+.center-protrait-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 600px;
+}
+
+.center-landscape-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  height:auto;
+}
+
+/* .mt-negative {
+  margin-top: -0.5rem;
+} */
